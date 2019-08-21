@@ -1,0 +1,5 @@
+ 1020  history
+ 1021  cd ..
+ 1022  ls week1
+ 1023  cd week1
+ 1024  history > ex2.txt
