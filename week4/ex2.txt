@@ -1,0 +1,9 @@
+pstree displays the following processes (i=3):
+ex2─┬─ex2─┬─ex2───ex2
+    │     └─ex2
+    ├─ex2───ex2
+    └─ex2
+For each iteration the existing processes create one more. 
+Thus, the number of processes after i_th iteration is 2^i. 
+If i=3, then there will be 8 processes.
+If i=5, then there will be 32 processes. 

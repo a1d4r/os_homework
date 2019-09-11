@@ -1,0 +1,23 @@
+The PID of the child process is the PID of the parent process plus 1.
+Everytime the program is runned, the new process is created.
+The program fork the current process with a new PID.
+Hello from parent [PID - 1444]
+Hello from child  [PID - 1445]
+Hello from parent [PID - 1446]
+Hello from child  [PID - 1447]
+Hello from parent [PID - 1448]
+Hello from child  [PID - 1449]
+Hello from parent [PID - 1450]
+Hello from child  [PID - 1451]
+Hello from parent [PID - 1452]
+Hello from child  [PID - 1453]
+Hello from parent [PID - 1454]
+Hello from child  [PID - 1455]
+Hello from parent [PID - 1456]
+Hello from child  [PID - 1457]
+Hello from parent [PID - 1458]
+Hello from child  [PID - 1459]
+Hello from parent [PID - 1460]
+Hello from child  [PID - 1461]
+Hello from parent [PID - 1462]
+Hello from child  [PID - 1463]
