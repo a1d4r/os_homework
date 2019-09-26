@@ -37,7 +37,7 @@ int main() {
         read(fd[0], &pid_child2, sizeof(pid_t));
         printf("PID of the 2nd child: %d\n", pid_child2);
         sleep(3);
-        printf("Sending SIGSTOP to the 2nd child by the 1st child\n");
+        printf("Sending SIGTERM to the 2nd child by the 1st child\n");
         kill(pid_child2, SIGTERM);
     } else {
         exit(1);
