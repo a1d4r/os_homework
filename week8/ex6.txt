@@ -1,0 +1,4 @@
+Answer: 8
+We need 13 offset bits for the page, as 2^13 = 8192 (8 KB).
+The remaining 16-13=3 bits are used to specify the page.
+Thus, there are 2^3=8 entries in the table.

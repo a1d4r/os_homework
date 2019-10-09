@@ -1,0 +1,2 @@
+`top` shows how much resouces each process uses. 
+The memory consumed by ex2 program was growing rapidly until it reached around 100 MB.

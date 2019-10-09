@@ -1,0 +1,6 @@
+A physical memory is a memory provided by the hardware.
+A virtual memory is a memory provided by the OS to the processes.
+The virtual memory might be more that the physical memory (if OS supports swapping).
+The virtual memory is also a good way to isolate processes: they works with the
+virtual addresses, not real. Everytime a process accesses a memory with the virtual address,
+the address is mapped into the address of physical memory.
