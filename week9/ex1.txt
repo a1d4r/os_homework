@@ -1,0 +1,14 @@
+Page frames: 10
+Hits: 10
+Misses: 990
+Hits/Misses: 0.010101
+
+Page frames: 50
+Hits: 51
+Misses: 949
+Hits/Misses: 0.053741
+
+Page frames: 100
+Hits: 93
+Misses: 907
+Hits/Misses: 0.102536

@@ -1,0 +1,51 @@
+Decreased Hit/Miss ratio
+---------------------------------------------------------------------------------------
+Sequence: 1 2 3 4 5 6 1 2 3 4 5 6
+The number of page frames: 5
+---------------------------------------------------------------------------------------
+Adding page 1
+Adding page 2
+Adding page 3
+Adding page 4
+Adding page 5
+Replacing page 1 with page 6
+Replacing page 2 with page 1
+Replacing page 3 with page 2
+Replacing page 4 with page 3
+Replacing page 5 with page 4
+Replacing page 6 with page 5
+Replacing page 1 with page 6
+Page frames: 5
+Hits: 0
+Misses: 12
+Hits/Misses: 0.000000
+---------------------------------------------------------------------------------------
+In this case the aging algorithm is not optimal and leads to poor performance.
+It replaces the least recently used page which is also the next page to be accessed.
+
+
+
+Increased Hit/Miss ratio
+---------------------------------------------------------------------------------------
+Sequence: 1 2 3 4 5 6 6 5 4 3 2 1
+The number of page frames: 5
+---------------------------------------------------------------------------------------
+Adding page 1
+Adding page 2
+Adding page 3
+Adding page 4
+Adding page 5
+Replacing page 1 with page 6
+Page 6 is already in the table
+Page 5 is already in the table
+Page 4 is already in the table
+Page 3 is already in the table
+Page 2 is already in the table
+Replacing page 6 with page 1
+Page frames: 5
+Hits: 5
+Misses: 7
+Hits/Misses: 0.714286
+---------------------------------------------------------------------------------------
+In this case the aging algorithm is optimal.
+It replaces the least recently used page which is also the farthest page to be accessed.
