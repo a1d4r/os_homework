@@ -1,0 +1,19 @@
+File: file1
+Hard links:
+file1
+link1
+
+File: file2
+Hard links:
+file2
+link2
+
+File: link1
+Hard links:
+file1
+link1
+
+File: link2
+Hard links:
+file2
+link2

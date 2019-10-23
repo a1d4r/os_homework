@@ -1,0 +1,13 @@
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ mkdir ../week01
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ touch ../week01/file.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ link ../week01/file.txt _ex2.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ ls -li
+total 0
+2251799813751517 -rw-rw-rw- 2 aidar aidar 0 Oct 23 19:30 _ex1.txt
+2251799813751517 -rw-rw-rw- 2 aidar aidar 0 Oct 23 19:30 _ex1_2.txt
+2251799813751521 -rw-rw-rw- 2 aidar aidar 0 Oct 23 19:33 _ex2.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ find .. -inum 2251799813751521
+../week01/file.txt
+../week10/_ex2.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ find .. -inum 2251799813751521 -exec rm {} \;
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ find .. -inum 2251799813751521

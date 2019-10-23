@@ -1,0 +1,41 @@
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ touch _ex3.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ ls -l
+total 4
+-rw-rw-rw- 2 aidar aidar   0 Oct 23 19:30 _ex1.txt
+-rw-rw-rw- 2 aidar aidar   0 Oct 23 19:30 _ex1_2.txt
+-rw-rw-rw- 1 aidar aidar   0 Oct 23 19:49 _ex3.txt
+-rw-rw-rw- 1 aidar aidar 757 Oct 23 19:41 ex2.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ chmod +x _ex3.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ ls -l
+total 4
+-rw-rw-rw- 2 aidar aidar   0 Oct 23 19:30 _ex1.txt
+-rw-rw-rw- 2 aidar aidar   0 Oct 23 19:30 _ex1_2.txt
+-rwxrwxrwx 1 aidar aidar   0 Oct 23 19:49 _ex3.txt
+-rw-rw-rw- 1 aidar aidar 757 Oct 23 19:41 ex2.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ chmod -x _ex3.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ ls -l
+total 4
+-rw-rw-rw- 2 aidar aidar   0 Oct 23 19:30 _ex1.txt
+-rw-rw-rw- 2 aidar aidar   0 Oct 23 19:30 _ex1_2.txt
+-rw-rw-rw- 1 aidar aidar   0 Oct 23 19:49 _ex3.txt
+-rw-rw-rw- 1 aidar aidar 757 Oct 23 19:41 ex2.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ chmod uo=+rwx _ex3.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ ls -l
+total 4
+-rw-rw-rw- 2 aidar aidar   0 Oct 23 19:30 _ex1.txt
+-rw-rw-rw- 2 aidar aidar   0 Oct 23 19:30 _ex1_2.txt
+-rwxrw-rwx 1 aidar aidar   0 Oct 23 19:49 _ex3.txt
+-rw-rw-rw- 1 aidar aidar 757 Oct 23 19:41 ex2.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ chmod -R g=u _ex3.txt
+aidar@wsl:/d/WSL/os_homework/week10 (master)$ ls -l
+total 4
+-rw-rw-rw- 2 aidar aidar   0 Oct 23 19:30 _ex1.txt
+-rw-rw-rw- 2 aidar aidar   0 Oct 23 19:30 _ex1_2.txt
+-rwxrwxrwx 1 aidar aidar   0 Oct 23 19:49 _ex3.txt
+-rw-rw-rw- 1 aidar aidar 757 Oct 23 19:41 ex2.txt
+
+The number is encoded permissions. Digits corresponds to user, group and other.
+The digit in binary representation shows if the permissions is set. 
+660 = rw-rw---- (rw for User, rw for Group, nothing for Other)
+775 = rwxrwxr-x (rwx for User, rwx for Group, rx for Other)
+775 = rwxrwxrwx (rwx for User, Group, and Other)
