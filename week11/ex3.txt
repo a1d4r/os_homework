@@ -1,0 +1,8 @@
+The first program prints two "Hello" because when the process runs fork 
+the output is in the buffer. So the child process has the same output buffer.
+As a result, "Hello" is printed twice: by child and parent processes.
+
+The second program prints one "Hello" because when the process runs fork 
+the output is already printed and the buffer is empty. So the child process has 
+the empty buffer as well. There is nothing to print after fork except the empty 
+lines characters.
