@@ -1,0 +1,67 @@
+Testing on file with the size 6488666 (6.2M)
+
+Default:
+real    0m0.098s
+user    0m0.016s
+sys     0m0.063s
+
+-DBUF_SIZE=1:
+real    1m6.947s
+user    0m7.250s
+sys     0m59.219s
+
+-DBUF_SIZE=10:
+real    0m6.811s
+user    0m0.656s
+sys     0m6.125s
+
+-DBUF_SIZE=100:
+real    0m0.668s
+user    0m0.078s
+sys     0m0.594s
+
+-DBUF_SIZE=1000:
+real    0m0.090s
+user    0m0.016s
+sys     0m0.063s
+
+-DBUF_SIZE=10000:
+real    0m0.036s
+user    0m0.000s
+sys     0m0.031s
+
+Result: the more buffer the program uses, the faster the programs executes.
+
+Testing on file with the size 6488666 (6.2M) with the O_SYNC flag
+
+Default:
+real    0m0.087s
+user    0m0.000s
+sys     0m0.078s
+
+-DBUF_SIZE=1:
+real    1m5.319s
+user    0m7.203s
+sys     0m58.000s
+
+-DBUF_SIZE=10:
+real    0m6.703s
+user    0m0.594s
+sys     0m6.109s
+
+-DBUF_SIZE=100:
+real    0m0.654s
+user    0m0.125s
+sys     0m0.500s
+
+-DBUF_SIZE=1000:
+real    0m0.090s
+user    0m0.016s
+sys     0m0.063s
+
+-DBUF_SIZE=10000:
+real    0m0.033s
+user    0m0.000s
+sys     0m0.016s
+
+Almost no difference with the O_SYNC flag on various buffer sizes.
