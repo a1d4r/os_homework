@@ -1,0 +1,19 @@
+Recovery
+
+Recovery is suitable for a small amount of running programs, so we do not spend
+much time to detect deadlocks. In this way we get rid of deadlocks 
+only when they appear. Also, recovery throught killing processes 
+is the simplest way to break a deadlock.
+
+Prevention
+
+Prevention is suitable for the programs for which we have no information about
+future requests. Also we should be able to set some limitations for the system
+to break one of the conditions for deadlocks stated by Coffman. 
+
+
+Avoidance
+
+Avoidance is suitable for the programs for which we know information about 
+future requests. If we know the resources that the process will request, we can say
+if it leads to an unsafe state.
